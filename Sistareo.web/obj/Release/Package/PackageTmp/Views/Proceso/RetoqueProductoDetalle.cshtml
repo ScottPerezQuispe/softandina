@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "RetoqueProductoDetalle";
+    Layout = "~/Views/Shared/_LayoutModal.cshtml";
+    string FechaApertura = ViewBag.FechaActual;
+    int IdRetoqueProducto = ViewBag.IdRetoqueProducto;
+    int IdRetoque = ViewBag.IdRetoque;
+    string CodigoProducto = ViewBag.CodigoProducto;
+    string DescripcionProducto = ViewBag.DescripcionProducto;
+}
+
+<input type="button" id="btnGrabar" style="display:none;" />
+<input type="button" id="btnCancelar" style="display:none;" />
+@Html.Hidden("IdRetoqueProducto", IdRetoqueProducto)
+@Html.Hidden("IdRetoqueProductoDetalle", 0)
+@Html.Hidden("hhFechaApertura", FechaApertura)
+@Html.Hidden("hhIdRetoque", IdRetoque)
+
+
+@Html.Hidden("Url_ListarPorIdProductoDetalle", Url.Action("ListarPorIdProductoDetalle", "Proceso"))
+@Html.Hidden("Url_EditarRetoqueProductoDetalle", Url.Action("EditarRetoqueProductoDetalle", "Proceso"))
+@Html.Hidden("Url_EliminarRetoqueProductoDetalle", Url.Action("EliminarRetoqueProductoDetalle", "Proceso"))
+
+@Html.Hidden("Url_RegistrarRetoqueProductoDetalle", Url.Action("RegistrarRetoqueProductoDetalle", "Proceso"))
+<div id="dvContenedorModal">
+
+    <fieldset class="css_fielset">
+        <legend>Datos Generales</legend>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="control-label col-xs-3">Producto:</label>
+                    <div class="col-xs-3" id="FechaIni">
+                        <input id="txtCodigoProducto" type="text" disabled class="form-control" value="@CodigoProducto" >
+                    </div>
+                    <div class="col-xs-6">
+                        <input id="txtProducto" disabled class="form-control" value="@DescripcionProducto"/>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="form-group">
+                    <label class="control-label col-xs-3">Descripción:</label>
+                    <div class="col-xs-9">
+                        <textarea class="form-control" id="txtDescripcion" name="txtDescripción"></textarea>
+                    </div>
+                </div>
+            </div>
+         
+        
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="control-label col-xs-3">Hora Inicios:</label>
+                    <div class="col-xs-2">
+                        <input type='text' placeholder="" id="txtHoraInicio" name="txtHoraInicio" class="form-control" />
+                    </div>
+                </div>
+
+                <br />
+                <br />
+
+            </div>
+            <div class="col-md-12">
+
+                <div class="form-group">
+                    <label class="control-label col-xs-3">Hora Fin:</label>
+                    <div class="col-xs-2">
+                        <input type='text' placeholder="" id="txtHoraFin" name="txtHoraFin" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </fieldset>
+
+
+    <fieldset class="css_fielset">
+
+        <div class="row">
+            <div class="col-sm-2 pull-right">
+                <button id="btnNuevo" type="button" class="btn btn-primary btn-block pull-right">Nuevo</button>
+            </div>
+        </div>
+        <br />
+
+        <div class="table-responsive">
+            <table id="tblRetoqueProducto" class="table table-bordered table-striped" style="text-align:center;">
+                <thead>
+                    <tr>
+                       
+                        <th style="text-align:center;">Descripción</th>
+                        <th style="text-align:center;">Hora Inicio</th>
+                        <th style="text-align:center;">Hora Fin</th>
+                        <th style="text-align:center;">Total</th>
+                        <th style="text-align:center;">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<script src="~/Scripts/jquery.maskedinput.js"></script>
+<script src="~/Scripts/View/RetoqueProductoDetalle.js"></script>

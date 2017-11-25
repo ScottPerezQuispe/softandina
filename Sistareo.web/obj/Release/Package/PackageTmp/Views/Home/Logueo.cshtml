@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Logueo";
+    Layout = null;
+
+}
+<input type="hidden" id="hddMensaje" value="@ViewBag.sMensaje">
+<input type="hidden" id="hddSession" value="@ViewBag.Session">
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title - Navarrete</title>
+
+    @Styles.Render("~/Content/css")
+
+    <script type="text/javascript">
+        var VG_RUTA_SERVIDOR = "@Url.Content("~")";
+    </script>
+
+</head>
+<body>
+    <div style="position: absolute; left:30%; right: 30%; top:25%" ;>
+        @using (Html.BeginForm("ValidarAccesos", "Home", FormMethod.Post,
+                                              new { enctype = "multipart/form-data" }))
+    {
+    @Html.ValidationSummary(true)
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title"><strong>CORPORACION GRAFICA NAVARRETE</strong></h3>
+        </div>
+        <div class="panel-body form-horizontal">
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input type="text" class="form-control" id="txtUsuario" name="txtUsuario" placeholder="[Usuario]">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </span>
+                        <input type="password" class="form-control" id="txtpwd" name="txtContrasena" placeholder="[Clave]">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Ingresar</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer" style="text-align:right"><h6>Buld 1.1.1.1</h6></div>
+    </div>
+    }
+    </div>
+    </body>
+</html>
+
+<script src="@Url.Content("~/Scripts/View/logueo.js")"></script>

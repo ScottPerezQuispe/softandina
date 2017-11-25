@@ -1,0 +1,211 @@
+﻿.css-document-list table tr td {
+  height: 46px;
+  vertical-align: middle; 
+}
+
+
+/* TOOGLE NUEVO */
+#btnNuevo {
+  display: block;  
+}
+
+#btnNuevo span:after,
+#btnNuevo span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#btnNuevo span:after{
+  top: 9px;
+}
+#btnNuevo span {
+  position: relative;
+  display: block;
+}
+
+#btnNuevo span,
+#btnNuevo span:after,
+#btnNuevo span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#btnNuevo.on span {
+  background-color: transparent;
+}
+#btnNuevo.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#btnNuevo.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#btnNuevo.on + #dvMenuNuevo {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* menu appearance*/
+#dvMenuNuevo {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  color: #999;
+  width: 250px;
+  padding: 0;  
+  border-radius: 2px;
+  background: white;
+  box-shadow:  2px 2px 2px 3px rgba(0,0,0,0.09);
+  /* just for this demo */
+  opacity: 0.9;
+  visibility: hidden;
+  transition: opacity .4s;
+  border: 1px solid #FFF;
+  z-index:5000;  
+}
+
+.css_toogle_menu{
+    width: 250px !important;
+    margin-bottom: 0px !important;
+    padding-left: 0px;
+}
+.css_toogle_menu li {
+    list-style: none;    
+}
+.css_toogle_menu li a {
+    display: block;
+    margin: 0;
+    padding: 12px;
+    text-align: left;
+    text-decoration: none;
+}
+.css_toogle_menu li a:hover,
+.css_toogle_menu li a:focus {
+    background-color: #FEEDDA;
+    color: #777;
+}
+
+
+
+/* Select ROW */
+.highlighted {    
+    background-color: #FCDEBC !important;
+}
+
+
+#tblExplorador tr {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+#dvDetalleObjeto dl {
+    margin-bottom: 0px;    
+}
+#dvDetalleObjeto dt {
+    width: 100px !important;
+    height: 28px !important;
+
+}
+#dvDetalleObjeto dd {
+    margin-left: 120px !important;
+    
+}
+
+
+
+#tblDetalleObjetoCompartida .badge {
+    margin-left:3px;
+}
+#tblDetalleObjetoCompartida td {
+    vertical-align: middle;
+}
+#tblDetalleObjetoCompartida span {
+    font-weight:600;
+}
+#tblDetalleObjetoCompartida td .left {
+    float: left;
+    width:50%;
+}
+#tblDetalleObjetoCompartida td .right {
+    float: left;
+    width:50%;
+    text-align:right;
+}
+
+
+.nav.nav-tabs li.active a {
+    background-color: #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.nav-tabs {
+    border-bottom: 0px solid #FFF !important;
+}
+.nav-tabs>li{
+    float:left;
+    margin-bottom: -2px;
+}
+.css-panel-tabs-body {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+
+
+.css-comentario-fila {    
+    margin-left:5px;
+    font-size: 12px;
+}
+
+.css-comentario-fila h5 {    
+    margin-bottom: 3px;
+}
+.css-comentario-fila #dvFechaRegistro {
+    color: #999;
+    padding-top: 3px;
+    font-size: 11px;
+    padding-right: 15px;
+    float:left;
+}
+.css-comentario-fila #dvOpciones {
+    color: #F78707;
+    padding-top: 5px;
+    font-size: 11px;    
+}
+.css-comentario-fila #dvOpciones a {
+    color: #F78707;
+}
+.css-comentario-fila #dvOpciones a:hover {
+    text-decoration:underline;
+}
+.css-comentario-subfila {
+    margin-left:60px !important;
+}
+
+
+.css-usuario-icono {
+    width:45px; 
+    background-color: #DCDCDC; 
+    padding: 10px; 
+    border-radius: 6px; 
+    border-top: 3px solid #F78707; 
+    border-left: 3px solid #F78707;
+    text-align:center;
+}
+
+  /* Agregacion  scrollbar vertical */
+    .ui-autocomplete {
+        max-height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 20px;
+    }

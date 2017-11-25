@@ -1,0 +1,269 @@
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\csc.exe
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\System.Collections.Immutable.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\vbc.exe
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\VBCSCompiler.exe
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\VBCSCompiler.exe.config
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.web.dll.config
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.web.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.web.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Antlr3.Runtime.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.SqlServer.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Google.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Web.Infrastructure.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Newtonsoft.Json.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Owin.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Helpers.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Mvc.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Optimization.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Razor.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Deployment.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Razor.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\WebGrease.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Helpers.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Mvc.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Optimization.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Razor.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Deployment.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Razor.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Antlr3.Runtime.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Newtonsoft.Json.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.SqlServer.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Google.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.csprojResolveAssemblyReference.cache
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.entidades.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.logica.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.datos.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.entidades.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.logica.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.datos.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.SqlServer.Types.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\RdlCompile.cache
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\RdlCompile.compiled
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\csc.exe
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\vbc.exe
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\VBCSCompiler.exe
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.web.dll.config
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.web.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.web.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Antlr3.Runtime.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.SqlServer.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Newtonsoft.Json.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Owin.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.entidades.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.logica.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Helpers.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Mvc.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Optimization.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Razor.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\WebGrease.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.datos.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.entidades.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.logica.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Helpers.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Mvc.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Optimization.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.Razor.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Antlr3.Runtime.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Newtonsoft.Json.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\EntityFramework.SqlServer.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\Sistareo.datos.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.csprojResolveAssemblyReference.cache
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\RdlCompile.cache
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\RdlCompile.compiled
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\csc.exe
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\System.Collections.Immutable.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\System.Reflection.Metadata.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\vbc.exe
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\VBCSCompiler.exe
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\roslyn\VBCSCompiler.exe.config
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.web.dll.config
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.web.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.web.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Antlr3.Runtime.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\EntityFramework.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\EntityFramework.SqlServer.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Google.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.ReportViewer.WebForms.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Web.Infrastructure.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Newtonsoft.Json.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Owin.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.entidades.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.logica.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Helpers.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Mvc.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Optimization.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Razor.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Deployment.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.WebPages.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Razor.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\WebGrease.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.datos.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.SqlServer.Types.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.entidades.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.logica.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Helpers.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Mvc.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Optimization.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.Razor.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.WebPages.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Deployment.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\System.Web.WebPages.Razor.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Antlr3.Runtime.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Newtonsoft.Json.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\EntityFramework.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\EntityFramework.SqlServer.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Google.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\Sistareo.datos.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\de\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\es\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\fr\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\it\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\ja\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\ko\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\pt\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\ru\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.csprojResolveAssemblyReference.cache
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\obj\Debug\RdlCompile.cache
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\obj\Debug\RdlCompile.compiled
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.web\obj\Debug\Sistareo.web.pdb

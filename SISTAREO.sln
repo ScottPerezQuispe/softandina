@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistareo.web", "Sistareo.web\Sistareo.web.csproj", "{F4E3645E-510E-475A-B7DB-59A640CB2053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistareo.datos", "Sistareo.datos\Sistareo.datos.csproj", "{3FD94723-0AAA-4751-93A2-FDA7A44572A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistareo.entidades", "Sistareo.entidades\Sistareo.entidades.csproj", "{810C7375-82BD-4CF2-B68B-CCA1B0A297CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistareo.logica", "Sistareo.logica\Sistareo.logica.csproj", "{23E2487D-4423-4E4A-BBEF-EB994A954FCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4E3645E-510E-475A-B7DB-59A640CB2053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E3645E-510E-475A-B7DB-59A640CB2053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E3645E-510E-475A-B7DB-59A640CB2053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E3645E-510E-475A-B7DB-59A640CB2053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD94723-0AAA-4751-93A2-FDA7A44572A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD94723-0AAA-4751-93A2-FDA7A44572A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD94723-0AAA-4751-93A2-FDA7A44572A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD94723-0AAA-4751-93A2-FDA7A44572A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810C7375-82BD-4CF2-B68B-CCA1B0A297CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810C7375-82BD-4CF2-B68B-CCA1B0A297CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810C7375-82BD-4CF2-B68B-CCA1B0A297CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810C7375-82BD-4CF2-B68B-CCA1B0A297CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E2487D-4423-4E4A-BBEF-EB994A954FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E2487D-4423-4E4A-BBEF-EB994A954FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E2487D-4423-4E4A-BBEF-EB994A954FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E2487D-4423-4E4A-BBEF-EB994A954FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

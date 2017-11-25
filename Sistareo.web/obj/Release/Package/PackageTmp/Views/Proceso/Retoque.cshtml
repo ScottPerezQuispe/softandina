@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Retoque";
+    Layout = "~/Views/Shared/_LayoutModal.cshtml";
+    string FechaApertura = ViewBag.FechaActual;
+    int IdRetoque = ViewBag.IdRetoque;
+}
+<input type="button" id="btnEliminar" style="display:none;" />
+<input type="button" id="btnGrabar" style="display:none;" />
+@Html.Hidden("FechaApertura", FechaApertura)
+@Html.Hidden("IdRetoque", IdRetoque)
+@Html.Hidden("Url_ListarTodoOperador", Url.Action("ListarTodoOperador", "Proceso"))
+@Html.Hidden("Url_RegistrarRetoque", Url.Action("RegistrarRetoque", "Proceso"))
+@Html.Hidden("Url_ObtenerPorIdRetoque", Url.Action("ObtenerPorIdRetoque", "Proceso"))
+@Html.Hidden("Url_ListarTodoCampania", Url.Action("ListarTodoCampania", "Proceso"))
+
+<div id="dvContenedorModal">
+
+    <fieldset class="css_fielset">
+        <legend>Datos Generales</legend>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label  class="control-label col-xs-4">Operario:</label>
+                    <div class="col-xs-8">
+                        <select id="cboOperario" class="form-control">
+                            @*<option value="0">Selecciona Operador</option>*@
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="form-group">
+                    <label class="control-label col-xs-4">Campaña:</label>
+                    <div class="col-xs-8">
+                        <select id="cboCampania" class="form-control">
+                            <option value="0">Selecciona campaña</option>
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label  class="control-label col-xs-4">Jefatura:</label>
+                    <div class="col-xs-8">
+                        <input  class="form-control" id="txtJefatura" name="txtJefatura" />
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label class="control-label col-xs-4">Coordinador:</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" id="txtCoordinador" name="txtCoordinador" />
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label class="col-xs-4 control-label">Fecha Apertura</label>
+                    <div class="col-xs-6 input-group date" id="FechaIni">
+                        @*@<input id="txtFechaApertura" disabled type="text" class="form-control">*@
+                        <input id="txtFechaApertura" type="text" class="form-control">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+           
+         
+           
+        </div>
+
+    </fieldset>
+
+
+
+
+</div>
+
+
+<script src="~/Scripts/View/Operario.js"></script>
+<script src="~/Scripts/View/Retoque.js"></script>

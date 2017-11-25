@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    string FechaActual = ViewBag.FechaActual; 
+    
+}
+
+<script src="~/Scripts/datetimepicker/moment.js"></script>
+<link href="~/Content/datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet" />
+<script src="~/Scripts/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="~/Scripts/datetimepicker/es.js"></script>
+
+<script src="~/Scripts/View/Proceso.js"></script>
+@Html.Hidden("Url_EliminarRetoque", Url.Action("EliminarRetoque", "Proceso"))
+@Html.Hidden("Url_ListarTodoOperador", Url.Action("ListarTodoOperador", "Proceso"))
+@Html.Hidden("Url_ListarFechaPorOperario", Url.Action("ListarFechaPorOperario", "Proceso"))
+@Html.Hidden("vFechaActual", FechaActual)
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2 class="gen-h2-titulo">Creación y Diseño</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a>Procesos</a>
+            </li>
+            <li class="active">
+                <strong>Creación y Diseño</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content">
+    <div class="row animated fadeInDown">
+
+        <!-- ************************************** -->
+        <!-- * LISTADO DOCUMENTOS * -->
+        <!-- ************************************** -->
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-content" style="padding: 10px;">
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Fecha Apertura</label>
+                            <div class="col-lg-2 input-group date" id="FechaIni">
+                                <input id="txtFechaApertura" type="text"  class="form-control">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                            <label class="col-lg-1 control-label">Operario</label>
+                            <div class="col-lg-3">
+                                <select id="cboOperario" class="form-control">
+                                    @*<option value="0">Selecciona Operador</option>*@
+                                </select>
+                            </div>
+                           <div class="col-lg-2">
+                               <button id="btnBuscar" type="button" class="btn btn-primary btn-block">Buscar</button>
+                           </div>
+                            <div  class="col-lg-2">
+                                <button id="btnNuevo"  type="button" class="btn btn-primary btn-block">Nuevo</button>
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+
+                    <br />
+                  
+                    <div class="tab-content">
+                        <div class="full-height-scroll" style="max-height:500px;">
+                            <div class="table-responsive css-document-list">
+                                <table id="tblExplorador" class="table table-hover">
+                                    <colgroup>
+                                        <col style="width:180px;" />
+                                        <col style="width:250px;" />
+                                        <col style="width:180px;" />
+                                        <col style="width:250px;" />
+                                        <col style="width:250px;" />
+                                        <col style="text-align: center; " />
+                                     
+                                    </colgroup>
+                                    <thead>
+                                        <tr style="background-color: #FAFAFA; border-bottom: 1px solid #FFF;">
+                                            <td> Campaña </td>
+                                            <td> Operario </td>
+                                            <td> Fecha Apertura </td>
+                                            <td> Jefatura </td>
+                                            <td> Coordinador</td>
+                                            
+                                            <td style="text-align: center; "> Opciones </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</div>
+
+<!-- ************************************** -->
+<!-- * MODAL * -->
+<!-- ************************************** -->
+<div id="mdlNuevo" class="modal css_modal fade" data-backdrop="static" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div id="mdlNuevoDialog" class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<i id="iIconoModal" class="fa"> </i>
+                <div class="modal-cabecera">
+                    <div class="modal-title"> <span id="mdlTitulo"></span> </div>
+                    <div id="divSubTitle" class="modal-subTitle">
+
+                        <span id="mdlSubTitulo_0 ">Mis Compartidas</span>
+                    </div>
+                </div>*@
+                <div class="modal-buttonTop">
+                    @*<button type="button" id="btnEliminar" class="btn btn-danger" autocomplete="off">Eliminar</button>*@
+                    <button type="button" id="btnGrabarModal" data-loading-text="Grabando..." class="btn btn-primary" autocomplete="off">Grabar</button>
+                    <button type="button" id="btnCancelarModal" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+
+                </div>
+            </div>
+            <div class="modal-body" style="padding: 15px 15px 15px 15px; ">
+                <iframe id="ifrModal"  style="min-height:0  !important;" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src=""></iframe>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- ************************************** -->
+<!-- * MODAL * -->
+<!-- ************************************** -->
+<div id="mdlRPDetalle" class="modal css_modal fade" data-backdrop="static" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div id="mdlRPDetalleDialog" class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<i id="iIconoModal" class="fa"> </i>
+                    <div class="modal-cabecera">
+                        <div class="modal-title"> <span id="mdlTitulo"></span> </div>
+                        <div id="divSubTitle" class="modal-subTitle">
+
+                            <span id="mdlSubTitulo_0 ">Mis Compartidas</span>
+                        </div>
+                    </div>*@
+                <div class="modal-buttonTop">
+                    @*<button type="button" id="btnEliminar" class="btn btn-danger" autocomplete="off">Eliminar</button>*@
+                    <button type="button" id="btnGrabarDetalleModal" data-loading-text="Grabando..." class="btn btn-primary" autocomplete="off">Grabar</button>
+                    <button type="button" id="btnCancelarDetalleModal" class="btn btn-default" >Cancelar</button>
+
+                </div>
+            </div>
+            <div class="modal-body" style="padding: 15px 15px 15px 15px; ">
+                <iframe id="ifrModalProduco" style="min-height:0  !important;" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src=""></iframe>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

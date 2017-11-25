@@ -1,0 +1,4 @@
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.entidades\bin\Release\Sistareo.entidades.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.entidades\bin\Release\Sistareo.entidades.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.entidades\obj\Release\Sistareo.entidades.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.entidades\obj\Release\Sistareo.entidades.pdb

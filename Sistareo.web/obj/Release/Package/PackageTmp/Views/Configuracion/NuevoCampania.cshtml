@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "NuevoCampania";
+    Layout = "~/Views/Shared/_LayoutModal.cshtml";
+    int IdCampania = ViewBag.IdCampania;
+}
+<input type="button" id="btnGrabar" style="display:none;" />
+@Html.Hidden("IdCampania", IdCampania)
+@Html.Hidden("Url_RegistrarCampania", Url.Action("RegistrarCampania", "Configuracion"))
+@Html.Hidden("Url_ObtenerCampania", Url.Action("ObtenerCampania", "Configuracion"))
+
+<div id="dvContenedorModal">
+
+    <fieldset class="css_fielset">
+        <legend>Datos Generales</legend>
+        <div class="row">
+            <div class="col-md-6">
+             
+             
+                <div class="form-group">
+                    <label class="control-label col-xs-4">Nombre:</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" id="txtNombre" name="txtJefatura" />
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label class="control-label col-xs-4">Descripción:</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" id="txtDescripcion" name="txtCoordinador" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<script src="~/Scripts/View/Compania.js"></script>

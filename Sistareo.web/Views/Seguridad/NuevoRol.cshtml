@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "NuevoRol";
+    Layout = "~/Views/Shared/_LayoutModal.cshtml";
+}
+
+
+<input type="hidden" id="hddidRol" value="@ViewData["idRol"]">
+<input type="button" id="btnGrabar" style="display:none;" />
+<input type="button" id="btnActualizar" style="display:none;" />
+@Html.Hidden("Url_ListarMenuRol", Url.Action("ListarMenuRol", "Seguridad"))
+@Html.Hidden("Url_RegistrarRol", Url.Action("RegistrarRol", "Seguridad"))
+@Html.Hidden("Url_ObtenerRol", Url.Action("ObtenerRol", "Seguridad"))
+
+
+
+
+<div id="dvContenedorModal">
+
+    <fieldset class="css_fielset">
+        <legend>Datos Generales</legend>
+
+        <div class="form-group">
+            <label class="col-lg-4 control-label">Nombre</label>
+            <div class="col-lg-8">
+                <input id="txtNombre" type="text" placeholder="[Nombre de Rol]" maxlength="120" class="form-control" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-4 control-label">Descripción</label>
+            <div class="col-lg-8">
+                <textarea id="txtDescripcion" class="form-control" placeholder="[Maximo 250 Caractereres]" maxlength="250"></textarea>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-4 control-label"> ¿Administrador? :</label><input id="SiSuperAdmi" type="checkbox" />
+       
+        </div>
+    </fieldset>
+
+    <fieldset class="css_fielset">
+        <legend>Opciones Menú</legend>
+        <div id="dvAccesos">
+
+           
+        </div>
+    </fieldset>
+
+
+</div>
+
+<!-- Script -->
+
+<script src="@Url.Content("~/Scripts/View/NuevoRol.js")"></script>

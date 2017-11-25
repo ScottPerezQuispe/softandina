@@ -1,0 +1,110 @@
+﻿/* Tabla Cliente */
+.clients-list {
+    margin-top: 10px !important;
+}
+
+    .clients-list .tab-pane {
+        position: relative;
+        height: 600px;
+    }
+
+.client-detail {
+    position: relative;
+    height: 620px;
+}
+
+.clients-list table tr td {
+    height: 46px;
+    vertical-align: middle;
+    border: none;
+}
+
+.client-link {
+    font-weight: 600;
+    color: inherit;
+}
+
+    .client-link:hover {
+        color: inherit;
+    }
+
+.client-avatar {
+    width: 42px;
+}
+
+    .client-avatar img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+    }
+
+
+/* Detalle Usuario */
+.dl-horizontal dt {
+    height: 25px;
+}
+
+.dl-horizontal dd {
+    height: 25px;
+}
+
+
+/* Contenedor Accesos Detalle */
+.css_accesos_contenedor {
+    border: 1px solid #e7eaec !important;
+}
+
+    .css_accesos_contenedor i {
+        padding: 8px;
+        border-right: 1px solid #e7eaec !important;
+    }
+
+    .css_accesos_contenedor span {
+        padding: 8px;
+    }
+
+.css_accesos_n1 {
+    background-color: #F8F8F8;
+}
+
+
+/* Select ROW */
+.highlighted {
+    background-color: #FCDEBC !important;
+}
+
+/* Select ROW */
+.select_row {
+    background-color: #d3feb9 !important;
+}
+
+
+@media (min-width: 538px) and (max-width: 1200px) {
+    .css_oculta_media {
+        display: block;
+    }
+
+    .css_muestra_media {
+        display: none;
+    }
+
+    @media (min-width: 538px) and (max-width: 685px) {
+        .css_oculta_media {
+            display: none;
+        }
+
+        .css_muestra_media {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 538px) {
+    .css_oculta_media {
+        display: none;
+    }
+
+    .css_muestra_media {
+        display: block;
+    }
+}

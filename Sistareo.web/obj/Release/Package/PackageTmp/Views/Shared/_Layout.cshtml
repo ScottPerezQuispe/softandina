@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+  
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @Styles.Render("~/Content/cssGeneral")
+
+
+    <script type="text/javascript">
+        var VG_RUTA_SERVIDOR = "@Url.Content("~")";
+    </script>
+</head>
+@Html.Hidden("Url_ObtenerInformacionUsuario", Url.Action("ObtenerInformacionUsuario", "Home"))
+<body  style="border-top: 0px;">
+    <div id="wrapper">
+        @*<div id="page-wrapper" class="gray-bg" style="margin: 0px 0px 0px 0px;">
+
+            @RenderBody()
+
+        </div>*@
+
+        <nav class="navbar-default navbar-static-side" role="navigation" style="background-color:#273135;">
+            <div class="sidebar-collapse">
+           
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span id="spimgUsuario"></span>
+                        </div>
+                        <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold"><span id="spUsuario"> - </span></strong>
+                                    </span> 
+                                    <span class="text-muted text-xs block">
+                                    <span id="spRolPrincipal"> - </span>
+                                    <b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="@Url.Action("Salir", "Home")">Salir</a></li>
+                            </ul>
+                        </div>
+                       
+                    </li>
+                    <li id="/Home/Index">
+                        <a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i><span class="nav-label">Inicio</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg" style="padding: 0px 0px;">
+
+            <div class="row border-bottom" style="height:51px;padding: 0px 15px;">
+                <nav class="navbar navbar-static-top white-bg nav-fondo" role="navigation" style="margin-bottom: 0; height:50px;">
+                  
+                    <div id="dv_navBarInicio" class="navbar-header navbar-left" style="padding: 15px 0px 0px 20px;">
+                        <a href="@Url.Action("Index", "Home")"><i class="fa fa-home" style="font-size:20px;"></i> Inicio</a>
+                    </div>
+                    <div class="navbar-header navbar-right" style="float:right !important; margin-right: 5px;">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-warning gen-btn-warning" style="margin: 10px 0px 0px 0px;" href="#" onclick="javascript:fn_MuestraOcultaLogo();"><i class="glyphicon glyphicon-align-justify"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right obj-hide-350" style="height:50px;float:right !important;">
+                        <li style="margin-right: 0px;">
+                            <a href="@Url.Action("Salir", "Home")" style="padding: 16px;">
+                                <i class="glyphicon glyphicon-log-out"></i> Salir
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+            </div>
+            @RenderBody()
+
+            <div class="footer fixed">
+                <div class="pull-left footer-center">
+                    <strong>NAVARRETE</strong> CORPORACIÓN GRAFICA NAVARRETE &copy; 2017-2018
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="dvAlertaOK" class="css_alerta_contenedor">
+        <div class="alert alert-success alert-dismissable">
+            <button onclick="javascript: $('#dvAlertaOK').hide();" class="close" type="button">×</button>
+            <a class="alert-link" href="#"><span id="dvAlertaOK_titulo">!</span></a>
+            <span id="dvAlertaOK_msg">.</span>
+        </div>
+    </div>
+    <div id="dvAlertaWARN" class="css_alerta_contenedor">
+        <div class="alert alert-warning alert-dismissable">
+            <button onclick="javascript: $('#dvAlertaWARN').hide();" class="close" type="button">×</button>
+            <a class="alert-link" href="#"><span id="dvAlertaWARN_titulo">!</span></a>
+            <span id="dvAlertaWARN_msg">WARN.</span>
+        </div>
+    </div>
+    <div id="dvAlertaERROR" class="css_alerta_contenedor">
+        <div class="alert alert-danger alert-dismissable">
+            <button onclick="javascript: $('#dvAlertaERROR').hide();" class="close" type="button">×</button>
+            <a class="alert-link" href="#"><span id="dvAlertaERROR_titulo">!</span></a>
+            <span id="dvAlertaERROR_msg">ERROR.</span>
+        </div>
+    </div>
+
+
+    @RenderSection("scripts", required: false)
+    <script src="@Url.Content("~/Scripts/View/index.js")"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "NuevoProducto";
+    Layout = "~/Views/Shared/_LayoutModal.cshtml";
+    int IdProducto = ViewBag.IdProducto;
+}
+
+<input type="button" id="btnGrabar" style="display:none;" />
+@Html.Hidden("IdProducto", IdProducto)
+@Html.Hidden("Url_RegistrarProducto", Url.Action("RegistrarProducto", "Configuracion"))
+@Html.Hidden("Url_ObtenerProductoPorId", Url.Action("ObtenerProductoPorId", "Configuracion"))
+
+<div id="dvContenedorModal">
+
+    <fieldset class="css_fielset">
+        <legend>Datos Generales</legend>
+        <div class="row">
+            <div class="col-md-6">
+
+
+                <div class="form-group">
+                    <label class="control-label col-xs-4">Codigo Producto:</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" id="txtCodigoProducto" name="txtCodigoProducto" />
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="form-group">
+                    <label class="control-label col-xs-4">Codigo Barra:</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" id="txtCodigoBarra" name="txtCodigoBarra" />
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label class="control-label col-xs-4">Descripción:</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" id="txtDescripcion" name="txtDescripcion" />
+                    </div>
+                </div>
+                <br />
+                <br />
+               
+            </div>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<script src="~/Scripts/View/ProductoNuevo.js"></script>
+

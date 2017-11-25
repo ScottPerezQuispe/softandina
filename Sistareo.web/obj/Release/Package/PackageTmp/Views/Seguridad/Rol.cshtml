@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "Rol";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Area de hidden-->
+<input type="hidden" id="hddidRol" value="0" />
+<input type="hidden" id="hddNombreRol" value="" />
+@Html.Hidden("Url_EliminarRol", Url.Action("EliminarRol", "Seguridad"))
+@Html.Hidden("Url_ListarRoles", Url.Action("ListarRoles", "Seguridad"))
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-9">
+        <h2 class="gen-h2-titulo">Gestión de Roles</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a>Seguridad</a>
+            </li>
+            <li class="active">
+                <strong>Gestión de Roles</strong>
+            </li>
+        </ol>
+    </div>
+  
+</div>
+
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox">
+                <div class="ibox-content">
+
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+
+                            <div class="row" style="padding-right: 10px; padding-left: 10px;">
+                                <div class="col-md-3" style="padding: 0px;">
+                                    <div class="input-group-btn">
+                                        <select class="form-control" name="account" id="cboFiltro" onchange="fn_FiltroLista();">
+                                            <option value="0" selected>Todos</option>
+                                            <option value="1">Nombre</option>>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-5" style="padding:0px;">
+                                    <div class="input-group-btn">
+                                        <input type="text" placeholder="Ingrese filtro " class="input form-control" id="txtValorFiltro" maxlength="20">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="input-group-btn">
+                                        <button style="width:100%" type="button" class="btn btn btn-primary" onclick="fn_ListarRoles();"> <i class="glyphicon glyphicon-search"></i> Buscar </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <div class="input-group-btn">
+                                        <button id="btnNuevo" style="width:100%" name="SegSeguridadRolRegistrar" style="display:block;" type="button" class="btn btn-primary"> <i class="glyphicon glyphicon-th"></i> &nbsp; Nuevo Rol </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <span id="spTotalElementos" class="pull-left small text-muted" style="padding:5px 4px;"></span>
+                    </div>
+
+                    <!-- ********************************** -->
+                    <!-- LISTADO -->
+                    <!-- ********************************** -->
+
+                    <div class="table-responsive clients-list">
+                        <table id="tblUsuario" class="table table-striped table-hover">
+                            <colgroup>
+                                <col style="width:40%" />
+                                <col style="width:40%" />
+                                <col style="width:40%" />
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                   
+                                    <th>Nombres</th>
+                                    <th>Descripción</th>
+                                    <th>Usuarios Asignados</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbContenedor"></tbody>
+                        </table>
+             
+                    </div>
+                    <!-- FIN LISTADO -->
+
+                </div>
+            </div>
+        </div>
+
+
+       
+    </div>
+</div>
+
+
+<!-- ************************************** -->
+<!-- * MODAL * -->
+<!-- ************************************** -->
+<div id="mdlNuevo" class="modal css_modal" data-backdrop="static" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div id="mdlNuevoDialog" class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i id="iIconoModal" ></i>
+                <div class="modal-cabecera">
+                    <div class="modal-title"> <span id="mdlTitulo"></span> </div>
+                    <div class="modal-subTitle"> <span id="mdlSubTitulo"></span> </div>
+                </div>
+                <div class="modal-buttonTop">
+                    <button type="button" id="btnGrabarModal" data-loading-text="Grabando..." class="btn btn-primary" autocomplete="off">Grabar</button>
+                    <button type="button" id="btnCancelarModal" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+            <div class="modal-body" style="padding: 15px 15px 15px 15px; ">
+                <iframe id="ifrModal" width="100%" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src=""></iframe>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="@Url.Content("~/Scripts/View/RolIndex.js")"></script>

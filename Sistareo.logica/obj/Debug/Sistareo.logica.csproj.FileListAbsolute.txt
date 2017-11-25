@@ -1,0 +1,27 @@
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.logica.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.logica.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.datos.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.entidades.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.datos.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.entidades.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.csprojResolveAssemblyReference.cache
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.logica.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.logica.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.datos.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.entidades.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.datos.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.entidades.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.csprojResolveAssemblyReference.cache
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.logica.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.logica.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.datos.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.entidades.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.datos.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.entidades.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.csprojResolveAssemblyReference.cache
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.pdb

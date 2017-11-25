@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+
+    <script type="text/javascript">
+        var VG_RUTA_SERVIDOR = "@Url.Content("~")";
+    </script>
+
+</head>
+
+<body style="border-top: 0px; background-color: #FAFAFA;">
+    <div id="wrapper">
+        <div id="page" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+
+            @RenderBody()
+
+        </div>
+    </div>
+</body>
+
+</html>

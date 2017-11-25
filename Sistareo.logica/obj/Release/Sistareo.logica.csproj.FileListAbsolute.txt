@@ -1,0 +1,9 @@
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Release\Sistareo.logica.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Release\Sistareo.logica.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Release\Sistareo.datos.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Release\Sistareo.entidades.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Release\Sistareo.datos.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Release\Sistareo.entidades.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Release\Sistareo.logica.csprojResolveAssemblyReference.cache
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Release\Sistareo.logica.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Release\Sistareo.logica.pdb

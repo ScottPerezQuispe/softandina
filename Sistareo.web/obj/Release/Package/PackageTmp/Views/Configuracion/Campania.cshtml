@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Campania";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<input type="button" id="btnGrabar" style="display:none;" />
+
+@Html.Hidden("Url_ListarCapania", Url.Action("ListarCapania", "Configuracion"))
+@Html.Hidden("Url_ObtenerPorCampania", Url.Action("ObtenerPorIdCampania", "Configuracion"))
+@Html.Hidden("Url_EliminarCampania", Url.Action("EliminarCampania", "Configuracion"))
+
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2 class="gen-h2-titulo">Campaña</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a>Configuracióbn</a>
+            </li>
+            <li class="active">
+                <strong>Campaña</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content">
+    <div class="row animated fadeInDown">
+
+        <!-- ************************************** -->
+        <!-- * LISTADO DOCUMENTOS * -->
+        <!-- ************************************** -->
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-content" style="padding: 10px;">
+
+                    <div class="row">
+                        <div class="form-group">
+                           
+                            <label class="col-lg-1 control-label">Campaña</label>
+                            <div class="col-lg-3">
+                                <input class="form-control" id="txtCampania" name="txtCampania" />
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-2">
+                                <button id="btnBuscar" type="button" class="btn btn-primary btn-block">Buscar</button>
+                            </div>
+                            <div class="col-lg-2">
+                                <button id="btnNuevo" type="button" class="btn btn-primary btn-block">Nuevo</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <br />
+
+                    <div class="tab-content">
+                        <div class="full-height-scroll" style="max-height:500px;">
+                            <div class="table-responsive css-document-list">
+                                <table id="tblExplorador" class="table table-hover">
+                                    <colgroup>
+                                        <col style="width:250px;" />
+                                        <col style="width:250px;" />
+                                        <col style="text-align: center; " />
+
+                                    </colgroup>
+                                    <thead>
+                                        <tr style="background-color: #FAFAFA; border-bottom: 1px solid #FFF;">
+                                            <td> Campaña </td>
+                                            <td> Descripción </td>
+                                            <td style="text-align: center; "> Opciones </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbContenedor"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- ************************************** -->
+<!-- * MODAL * -->
+<!-- ************************************** -->
+<div id="mdlNuevo" class="modal css_modal fade" data-backdrop="static" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div id="mdlNuevoDialog" class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<i id="iIconoModal" class="fa"> </i>
+                    <div class="modal-cabecera">
+                        <div class="modal-title"> <span id="mdlTitulo"></span> </div>
+                        <div id="divSubTitle" class="modal-subTitle">
+
+                            <span id="mdlSubTitulo_0 ">Mis Compartidas</span>
+                        </div>
+                    </div>*@
+                <div class="modal-buttonTop">
+                    @*<button type="button" id="btnEliminar" class="btn btn-danger" autocomplete="off">Eliminar</button>*@
+                    <button type="button" id="btnGrabarModal" data-loading-text="Grabando..." class="btn btn-primary" autocomplete="off">Grabar</button>
+                    <button type="button" id="btnCancelarModal" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+
+                </div>
+            </div>
+            <div class="modal-body" style="padding: 15px 15px 15px 15px; ">
+                <iframe id="ifrModal" style="min-height:0  !important;" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src=""></iframe>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="~/Scripts/View/CompaniaIndex.js"></script>

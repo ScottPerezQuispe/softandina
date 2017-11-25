@@ -1,0 +1,21 @@
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.datos.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.datos.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.entidades.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.entidades.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.csprojResolveAssemblyReference.cache
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.datos.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.datos.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.entidades.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.entidades.pdb
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.csprojResolveAssemblyReference.cache
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.dll
+C:\Users\Fvega\Desktop\SISTAREO\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.datos.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.datos.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.entidades.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Debug\Sistareo.entidades.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.csprojResolveAssemblyReference.cache
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\obj\Debug\Sistareo.datos.pdb

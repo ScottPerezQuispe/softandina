@@ -1,0 +1,7 @@
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Release\Sistareo.datos.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Release\Sistareo.datos.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Release\Sistareo.entidades.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\bin\Release\Sistareo.entidades.pdb
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\obj\Release\Sistareo.datos.csprojResolveAssemblyReference.cache
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\obj\Release\Sistareo.datos.dll
+G:\Desarrollos Navarrete\SISTAREO\Sistareo.datos\obj\Release\Sistareo.datos.pdb

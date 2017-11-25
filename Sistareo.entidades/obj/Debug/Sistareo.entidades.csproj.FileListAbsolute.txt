@@ -1,0 +1,5 @@
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.entidades\bin\Debug\Sistareo.entidades.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.entidades\bin\Debug\Sistareo.entidades.pdb
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.entidades\obj\Debug\Sistareo.entidades.csprojResolveAssemblyReference.cache
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.entidades\obj\Debug\Sistareo.entidades.dll
+D:\Franklin-Proyecto\SISTAREO\SISTAREO\Sistareo.entidades\obj\Debug\Sistareo.entidades.pdb
