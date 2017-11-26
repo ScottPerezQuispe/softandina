@@ -17,6 +17,9 @@ namespace Sistareo.web.Controllers
         #region "Campana"
         public ActionResult Campania()
         {
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+
             return View();
         }
 
@@ -175,6 +178,9 @@ namespace Sistareo.web.Controllers
         #region "Producto"
         public ActionResult Producto()
         {
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+
             return View();
         }
 

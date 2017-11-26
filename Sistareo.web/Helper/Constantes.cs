@@ -17,7 +17,12 @@ namespace Sistareo.web.Helper
         public const string msgErrorMenuSeguridad = "Se ha intentado ingresara una pantalla a la que no tiene acceso.";
 
         public static string msgErrorLogueo="El usuario y/o contraseña son incorrectos.";
-         
-      
+
+        //CONTROL SESION
+        public const string csVariableSesion = "SESSION_NOMBREUSUARIO";
+
+        //PARAMETROS
+        public const int TipoUsuario = 2;
+
     }
 }

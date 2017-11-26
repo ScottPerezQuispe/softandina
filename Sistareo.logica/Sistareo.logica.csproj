@@ -44,6 +44,7 @@
     <Compile Include="Configuracion\CampaniaLG.cs" />
     <Compile Include="Configuracion\OperadorLG.cs" />
     <Compile Include="Configuracion\ProductoLG.cs" />
+    <Compile Include="Configuracion\TipoLG.cs" />
     <Compile Include="Proceso\RetoqueLG.cs" />
     <Compile Include="Proceso\RetoqueProductoDetalleLG.cs" />
     <Compile Include="Proceso\RetoqueProductoLG.cs" />

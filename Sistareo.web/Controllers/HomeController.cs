@@ -13,12 +13,18 @@ namespace Sistareo.web.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {
+        { //Valida Sesión
+
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+            
             return View();
         }
 
         public ActionResult Logueo()
         {
+           
+
             return View();
         }
 
@@ -86,15 +92,7 @@ namespace Sistareo.web.Controllers
 
             try
             {
-                //Valida Sesión
-                //if (string.IsNullOrEmpty(Session[utlConstante.csVariableSesion] as string))
-                //{
-                //    throw new ApplicationException("Su sesión ha caducado, por favor vuelva a ingresar al sistema.");
-                //}
-
-
-
-
+               
                 Usuario oenUsuario = new Usuario();
                 
                 List<Pagina> loenMenu = new List<Pagina>();

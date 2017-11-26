@@ -9,15 +9,15 @@
         fn_ObtenerPorIdRetoque(IdRetoque);
     }
     $("#btnGrabar").click(function () {
-
-        var bGraba = true;
-
-
         fn_RegistrarRetoque();
-
     });
 
-  
+
+    $('#FechaIni').datetimepicker({
+        locale: 'es',
+        format: 'DD/MM/YYYY'
+        //defaultDate: n
+    });
 
 });
 

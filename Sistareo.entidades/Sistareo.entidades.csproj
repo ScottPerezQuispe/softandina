@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Configuracion\Campania.cs" />
     <Compile Include="Configuracion\Operador.cs" />
+    <Compile Include="Configuracion\Tipo.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Configuracion\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

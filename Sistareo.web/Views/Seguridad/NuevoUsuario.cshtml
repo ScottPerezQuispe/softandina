@@ -7,6 +7,7 @@
 <input type="button" id="btnActualizar" style="display:none;" />
 <input type="hidden" id="hhdIdUsuario" value="@ViewData["IdUsuario"]">
 @Html.Hidden("Url_ListarTodoRol", Url.Action("ListarTodoRol", "Seguridad"))
+@Html.Hidden("Url_ListarTodoTipoUsuario", Url.Action("ListarTodoTipoUsuario", "Seguridad"))
 @Html.Hidden("Url_ObtenerUsuario", Url.Action("ObtenerUsuario", "Seguridad"))
 @Html.Hidden("Url_RegistrarUsuario", Url.Action("RegistrarUsuario", "Seguridad"))
 
@@ -25,12 +26,12 @@
                         </div>
                         <label class="col-sm-2 control-label" style="padding-right:0px;">DNI</label>
                         <div class="col-sm-3">
-                            <input id="txtDNI" type="text" class="form-control">
+                            <input id="txtDNI" type="text" class="form-control"  maxlength="8">
                         </div>
 
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" style="padding-right:0px;">APellido Paterno</label>
+                        <label class="col-sm-2 control-label" style="padding-right:0px;">Apellido Paterno</label>
                         <div class="col-sm-3">
                             <input id="txtApePaterno" type="text" class="form-control">
                         </div>
@@ -40,7 +41,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" style="padding-right:0px;">APellido Materno</label>
+                        <label class="col-sm-2 control-label" style="padding-right:0px;">Apellido Materno</label>
                         <div class="col-sm-3">
                             <input id="txtApeMaterno" type="text" class="form-control">
                         </div>
@@ -56,7 +57,25 @@
                                 <option value="0">Seleccione</option>
                             </select>
                         </div>
-                      
+                        <label class="col-sm-2 control-label" style="padding-right:0px;">Jefatura</label>
+                        <div class="col-sm-3">
+                            <input id="IdJefatura" type="checkbox" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" style="padding-right:0px;">Tipo Usuario</label>
+                        <div class="col-sm-3">
+                            <select id="cboTipoUsuario" class="form-control">
+                                <option value="0">Seleccione</option>
+                            </select>
+                        </div>
+
+                        <label class="col-sm-2 control-label" style="padding-right:0px;">Coordinador</label>
+                        <div class="col-sm-3">
+                            <input id="IdCoordinador" type="checkbox" >
+                        </div>
+
                     </div>
 
                  
@@ -68,5 +87,5 @@
 
 
 </div>
-
+@*<script src="@Url.Content("~/Scripts/View/General.js")"></script>*@
 <script src="@Url.Content("~/Scripts/View/Usuario.js")"></script>

@@ -23,11 +23,14 @@ namespace Sistareo.datos.Seguridad
                         cn.Open();
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@NombreUsuario", oUsuario.NombreUsuario);
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", oUsuario.IdTipoUsuario);
                         cmd.Parameters.AddWithValue("@Clave", oUsuario.Clave);
                         cmd.Parameters.AddWithValue("@Nombres", oUsuario.Nombres);
                         cmd.Parameters.AddWithValue("@ApellidoPaterno", oUsuario.ApellidoPaterno);
                         cmd.Parameters.AddWithValue("@ApellidoMaterno", oUsuario.ApellidoMaterno);
                         cmd.Parameters.AddWithValue("@DNI", oUsuario.DNI);
+                        cmd.Parameters.AddWithValue("@Jefatura", oUsuario.Jefatura);
+                        cmd.Parameters.AddWithValue("@Coordinador", oUsuario.Coordinador);
                         cmd.Parameters.AddWithValue("@UsuarioCreacion", oUsuario.UsuarioCreacion);
 
                         Codigo = (Convert.ToInt16(cmd.ExecuteScalar()));
@@ -53,12 +56,15 @@ namespace Sistareo.datos.Seguridad
                         cn.Open();
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@IdUsuario", oUsuario.IdUsuario);
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", oUsuario.IdTipoUsuario);
                         cmd.Parameters.AddWithValue("@NombreUsuario", oUsuario.NombreUsuario);
                         cmd.Parameters.AddWithValue("@Clave", oUsuario.Clave);
                         cmd.Parameters.AddWithValue("@Nombres", oUsuario.Nombres);
                         cmd.Parameters.AddWithValue("@ApellidoPaterno", oUsuario.ApellidoPaterno);
                         cmd.Parameters.AddWithValue("@ApellidoMaterno", oUsuario.ApellidoMaterno);
                         cmd.Parameters.AddWithValue("@DNI", oUsuario.DNI);
+                        cmd.Parameters.AddWithValue("@Jefatura", oUsuario.Jefatura);
+                        cmd.Parameters.AddWithValue("@Coordinador", oUsuario.Coordinador);
                         cmd.Parameters.AddWithValue("@UsuarioModificacion", oUsuario.UsuarioModificacion);
 
                         if (Convert.ToBoolean(cmd.ExecuteNonQuery()))
@@ -132,6 +138,8 @@ namespace Sistareo.datos.Seguridad
                                 oUsuario = new Usuario();
                                 oUsuario.IdUsuario = Convert.ToInt32(oReader["IdUsuario"]);
                                 oUsuario.NombreUsuario = Convert.ToString(oReader["NombreUsuario"]);
+                                oUsuario.IdTipoUsuario = Convert.ToInt32(oReader["IdTipoUsuario"]);
+                                
                                 oUsuario.Clave = Convert.ToString(oReader["Clave"]);
                                 oUsuario.Nombres = Convert.ToString(oReader["Nombres"]);
                                 oUsuario.ApellidoPaterno = Convert.ToString(oReader["ApellidoPaterno"]);
@@ -140,6 +148,8 @@ namespace Sistareo.datos.Seguridad
                                 oUsuario.DNI = Convert.ToString(oReader["DNI"]);
                                 oUsuario.IdRol = Convert.ToInt32(oReader["IdRol"]);
                                 oUsuario.NombreRol = Convert.ToString(oReader["NombreRol"]);
+                                oUsuario.Jefatura = Convert.ToBoolean(oReader["Jefatura"]);
+                                oUsuario.Coordinador = Convert.ToBoolean(oReader["Coordinador"]);
                             }
                         }
                     }

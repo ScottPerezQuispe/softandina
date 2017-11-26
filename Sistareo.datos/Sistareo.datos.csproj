@@ -45,6 +45,7 @@
     <Compile Include="Configuracion\CampaniaDA.cs" />
     <Compile Include="Configuracion\OperadorDA.cs" />
     <Compile Include="Configuracion\ProductoDA.cs" />
+    <Compile Include="Configuracion\TipoDA.cs" />
     <Compile Include="Proceso\RetoqueDA.cs" />
     <Compile Include="Proceso\RetoqueProductoDA.cs" />
     <Compile Include="Proceso\RetoqueProductoDetalleDA.cs" />

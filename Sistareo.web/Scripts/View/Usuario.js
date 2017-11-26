@@ -5,7 +5,10 @@ $(document).ready(function () {
 
 
     //Carga Roles
+    //fn_ListarTipoUsuario();
     fn_ListarRoles();
+
+
 
     if (IdUsuario != 0) {
         fn_ObtenerUsuario(IdUsuario)
@@ -28,7 +31,7 @@ $(document).ready(function () {
 function fn_ListarRoles() {
     var url = $("#Url_ListarTodoRol").val();
 
-    debugger;
+
     $.ajax({
         type: "GET",
         url: url,
@@ -37,10 +40,16 @@ function fn_ListarRoles() {
         cache: false,
         success: function (Result) {
             if (Result.iTipoResultado == 1) {
-                var ListaRol = Result.ListaRol
+                var ListaRol = Result.ListaRol;
+                var ListaTipoUsuario = Result.ListaTipoUsuario;
                 $.each(ListaRol, function (index, item) {
 
                     $("#cboRoles").append("<option value=" + this.IdRol + ">" + this.Nombre + "</option>");
+                });
+
+                $.each(ListaTipoUsuario, function (index, item) {
+
+                    $("#cboTipoUsuario").append("<option value=" + this.IdTipo + ">" + this.Nombre + "</option>");
                 });
             }
         },
@@ -52,6 +61,34 @@ function fn_ListarRoles() {
     });
 }
 
+
+//Permite obtener la lista de los operadores
+//function fn_ListarTipoUsuario() {
+//    var url = $("#Url_ListarTodoTipoUsuario").val();
+
+
+//    $.ajax({
+//        type: "GET",
+//        url: url,
+//        async: true,
+//        dataType: "json",
+//        cache: false,
+//        success: function (Result) {
+//            if (Result.iTipoResultado == 1) {
+//                var ListaTipoUsuario = Result.ListaTipoUsuario
+//                $.each(ListaTipoUsuario, function (index, item) {
+
+//                    $("#cboTipoUsuario").append("<option value=" + this.IdTipo + ">" + this.Nombre + "</option>");
+//                });
+//            }
+//        },
+
+//        error: function () {
+//            parent.fn_util_MuestraMensaje("ERROR.", "No se listar. Por favor, inténtelo mas tarde.", "E");
+//            parent.fn_util_desbloquearPantalla();
+//        }
+//    });
+//}
 
 function fn_RegistrarUsuario() {
 
@@ -65,6 +102,10 @@ function fn_RegistrarUsuario() {
     var NombreUsuario = $('#txtUsuario').val();
     var Clave = $('#txtClave').val();
 
+    var IdTipoUsuario = $('#cboTipoUsuario').val();
+
+    var IdJefatura = $('#IdJefatura').prop('checked');
+    var IdCoordinador = $('#IdCoordinador').prop('checked');
 
     if ($.trim(Nombres) == "") {
         parent.fn_util_MuestraMensaje("Alerta", "Ingrese un Nombre", "W");
@@ -94,6 +135,10 @@ function fn_RegistrarUsuario() {
         parent.fn_util_MuestraMensaje("Alerta", "Ingrese constraseña", "W");
         return false;
     }
+    if ($.trim(IdTipoUsuario) == 0) {
+        parent.fn_util_MuestraMensaje("Alerta", "Ingrese Tipo Usuario", "W");
+        return false;
+    }
 
 
 
@@ -113,8 +158,9 @@ function fn_RegistrarUsuario() {
         url: url,
         //async: true,
         data: {
-            "IdUsuario": IdUsuario, "Nombres": Nombres, "ApellidoPaterno": ApellidoPaterno, "ApellidoMaterno": ApellidoMaterno, "DNI": DNI
-            , "IdRol": IdRol, "NombreUsuario": NombreUsuario, "Clave": Clave
+            "IdUsuario": IdUsuario, "Nombres": Nombres, "ApellidoPaterno": ApellidoPaterno, "ApellidoMaterno": ApellidoMaterno,
+            "DNI": DNI, "IdRol": IdRol, "NombreUsuario": NombreUsuario, "Clave": Clave, "IdTipoUsuario": IdTipoUsuario,
+            "IdJefatura": IdJefatura, "IdCoordinador": IdCoordinador
         },
         datatype: 'JSON',
 
@@ -152,11 +198,6 @@ function fn_RegistrarUsuario() {
     });
 
 
-
-
-
-
-
 }
 
 
@@ -180,21 +221,22 @@ function fn_ObtenerUsuario(IdUsuario) {
             if (Result.iTipoResultado == 1) {
                 var Usuario = Result.Usuario;
 
-      
                  $("#txtNombres").val(Usuario.Nombres);
+                 $('#cboTipoUsuario').val(Usuario.IdTipoUsuario);
                  $("#txtApePaterno").val(Usuario.ApellidoPaterno);
                  $('#txtApeMaterno').val(Usuario.ApellidoMaterno);
                  $('#cboRoles').val(Usuario.IdRol);
                  $("#txtDNI").val(Usuario.DNI);
                  $('#txtUsuario').val(Usuario.NombreUsuario);
                  $('#txtClave').val(Usuario.Clave);
-
+                
+                 $("#IdJefatura").prop("checked", Usuario.Jefatura);
+                 $("#IdCoordinador").prop("checked", Usuario.Coordinador);
                 //Desbloquear Pantalla
                 parent.fn_util_desbloquearPantalla();
 
             } else {
                 parent.fn_util_MuestraMensaje("ERROR.", Result.vError, "E");
-
                 //Desbloquear Pantalla
                 parent.fn_util_desbloquearPantalla();
             }

@@ -1,4 +1,5 @@
 ﻿using Sistareo.entidades.Seguridad;
+using Sistareo.logica.Configuracion;
 using Sistareo.logica.Seguridad;
 using Sistareo.web.Helper;
 using Sistareo.web.Models.ViewModel;
@@ -17,6 +18,8 @@ namespace Sistareo.web.Controllers
         #region Usuario
         public ActionResult Usuario()
         {
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
             return View();
         }
 
@@ -53,6 +56,8 @@ namespace Sistareo.web.Controllers
 
         public ActionResult NuevoUsuario(int IdUsuario = 0)
         {
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
 
             ViewData["IdUsuario"] = IdUsuario;
             return View();
@@ -61,7 +66,7 @@ namespace Sistareo.web.Controllers
 
         [HttpPost]
         public JsonResult RegistrarUsuario( int IdUsuario ,string Nombres,string ApellidoPaterno,string ApellidoMaterno, 
-                                            string DNI,int IdRol,string NombreUsuario,string Clave)
+                                            string DNI,int IdRol,string NombreUsuario,string Clave,int IdTipoUsuario,bool IdJefatura,bool IdCoordinador)
         {
             
             var objResult = new object();
@@ -73,6 +78,7 @@ namespace Sistareo.web.Controllers
                 SeguridadViewModel vm = new SeguridadViewModel();
                 vm.Usuario = new Usuario();
                 vm.Usuario.IdUsuario = IdUsuario;
+                vm.Usuario.IdTipoUsuario = IdTipoUsuario;
                 vm.Usuario.Nombres = Nombres;
                 vm.Usuario.ApellidoPaterno = ApellidoPaterno;
                 vm.Usuario.ApellidoMaterno = ApellidoMaterno;
@@ -81,6 +87,8 @@ namespace Sistareo.web.Controllers
                 vm.Usuario.Clave = Clave;
                 vm.Usuario.Nombres = Nombres;
                 vm.Usuario.IdRol = IdRol;
+                vm.Usuario.Jefatura = IdJefatura;
+                vm.Usuario.Coordinador = IdCoordinador;
                 vm.Usuario.UsuarioCreacion = Auditoria.ObtenerNombreUsuario();
                 vm.Usuario.UsuarioModificacion = Auditoria.ObtenerNombreUsuario();
 
@@ -189,6 +197,31 @@ namespace Sistareo.web.Controllers
             }
         }
 
+
+        [HttpGet]
+        public JsonResult ListarTodoTipoUsuario()
+        {
+            SeguridadViewModel VM = new SeguridadViewModel();
+            var objResult = new Object();
+
+            try
+            {
+                VM.ListaTipoUsuario = new TipoLG().ListarTipoUsuario(Constantes.TipoUsuario).ToList();
+                objResult = new
+                {
+                    iTipoResultado = 1,
+                    ListaTipoUsuario = VM.ListaTipoUsuario,
+
+                };
+                return Json(objResult, JsonRequestBehavior.AllowGet);
+            }
+
+            catch (Exception ex)
+            {
+                objResult = new { iTipoResultado = 2, Mensaje = ex.Message };
+                return Json(objResult, JsonRequestBehavior.AllowGet);
+            }
+        }
         #endregion
 
 
@@ -196,6 +229,9 @@ namespace Sistareo.web.Controllers
 
         public ActionResult Rol()
         {
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+
             return View();
         }
 
@@ -210,7 +246,9 @@ namespace Sistareo.web.Controllers
 
                 vm.ListaRol = new RolLG().ListarRolPorNombre(Nombre).ToList();
 
-                    objResult = new
+                
+
+                objResult = new
                     {
                         iTipoResultado = 1,
 
@@ -245,9 +283,11 @@ namespace Sistareo.web.Controllers
             try
             {
                 VM.ListaRol = new RolLG().ListarRol().ToList();
+                VM.ListaTipoUsuario = new TipoLG().ListarTipoUsuario(Constantes.TipoUsuario).ToList();
                 objResult = new
                 {
                     iTipoResultado = 1,
+                    ListaTipoUsuario = VM.ListaTipoUsuario,
                     ListaRol = VM.ListaRol,
 
                 };

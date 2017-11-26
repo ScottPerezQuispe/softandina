@@ -15,6 +15,10 @@ namespace Sistareo.web.Controllers
         // GET: Reporte
         public ActionResult ReporteRetoqueDiseño()
         {
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+
+
             CultureInfo culture = new CultureInfo("es-ES");
             var FechaActual = DateTime.Now.ToString("dd/MM/yyyy", culture);
             ViewBag.FechaActual = FechaActual;

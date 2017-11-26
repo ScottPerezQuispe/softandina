@@ -25,3 +25,12 @@ G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\bin\Debug\Sistareo.entidades.p
 G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.csprojResolveAssemblyReference.cache
 G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.dll
 G:\Desarrollos Navarrete\SISTAREO\Sistareo.logica\obj\Debug\Sistareo.logica.pdb
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\bin\Debug\Sistareo.logica.dll
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\bin\Debug\Sistareo.logica.pdb
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\bin\Debug\Sistareo.datos.dll
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\bin\Debug\Sistareo.entidades.dll
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\bin\Debug\Sistareo.datos.pdb
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\bin\Debug\Sistareo.entidades.pdb
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\obj\Debug\Sistareo.logica.csprojResolveAssemblyReference.cache
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\obj\Debug\Sistareo.logica.dll
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.logica\obj\Debug\Sistareo.logica.pdb

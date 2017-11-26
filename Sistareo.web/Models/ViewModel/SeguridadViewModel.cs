@@ -1,4 +1,5 @@
-﻿using Sistareo.entidades.Seguridad;
+﻿using Sistareo.entidades.Configuracion;
+using Sistareo.entidades.Seguridad;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,8 @@ namespace Sistareo.web.Models.ViewModel
         public List<Pagina> ListaPaginaTemp { get; set; }
 
         public Pagina Pagina { get; set; }
+
+
+        public List<Tipo> ListaTipoUsuario { get; set; }
     }
 }

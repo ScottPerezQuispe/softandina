@@ -20,6 +20,21 @@
         <legend>Datos Generales</legend>
         <div class="row">
             <div class="col-md-6">
+
+                <div class="form-group">
+                    <label class="col-xs-4 control-label">Fecha Apertura</label>
+                    <div class="col-xs-6 input-group date" id="FechaIni">
+                        @*@<input id="txtFechaApertura" disabled type="text" class="form-control">*@
+                        <input id="txtFechaApertura" type="text" class="form-control">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+
                 <div class="form-group">
                     <label  class="control-label col-xs-4">Operario:</label>
                     <div class="col-xs-8">
@@ -29,7 +44,7 @@
                     </div>
                 </div>
                 <br />
-                <br />
+             
                 <br />
                 <div class="form-group">
                     <label class="control-label col-xs-4">Campaña:</label>
@@ -55,18 +70,8 @@
                         <input class="form-control" id="txtCoordinador" name="txtCoordinador" />
                     </div>
                 </div>
-                <br />
-                <br />
-                <div class="form-group">
-                    <label class="col-xs-4 control-label">Fecha Apertura</label>
-                    <div class="col-xs-6 input-group date" id="FechaIni">
-                        @*@<input id="txtFechaApertura" disabled type="text" class="form-control">*@
-                        <input id="txtFechaApertura" type="text" class="form-control">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
+            
+           
             </div>
            
          
@@ -80,6 +85,10 @@
 
 </div>
 
+<script src="~/Scripts/datetimepicker/moment.js"></script>
+<link href="~/Content/datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet" />
+<script src="~/Scripts/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="~/Scripts/datetimepicker/es.js"></script>
 
 <script src="~/Scripts/View/Operario.js"></script>
 <script src="~/Scripts/View/Retoque.js"></script>

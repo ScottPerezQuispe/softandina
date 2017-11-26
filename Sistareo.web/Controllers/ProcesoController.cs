@@ -17,7 +17,11 @@ namespace Sistareo.web.Controllers
         public ActionResult Index()
         {
 
-        var strin=    Auditoria.ObtenerNivel3("/Proceso/Index");
+            //var strin=    Auditoria.ObtenerNivel3("/Proceso/Index");
+
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+
 
             CultureInfo culture = new CultureInfo("es-ES");
             var FechaActual = DateTime.Now.ToString("dd/MM/yyyy", culture);
@@ -150,7 +154,10 @@ namespace Sistareo.web.Controllers
 
         public ActionResult Retoque(int IdRetoque=0)
         {
-         
+
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+
             CultureInfo culture = new CultureInfo("es-ES");
             var FechaActual = DateTime.Now.ToString("dd/MM/yyyy", culture);
             ViewBag.FechaActual = FechaActual;
@@ -192,6 +199,9 @@ namespace Sistareo.web.Controllers
         {
             try
             {
+                if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                    return RedirectToAction("Logueo", "Home");
+
                 var FechaApertura = new RetoqueLG().ObtenerPorIdRetoque(IdRetoque);
                 ViewBag.FechaApertura = FechaApertura.vFechaApertura;
                 ViewBag.IdRetoque = IdRetoque;
@@ -391,6 +401,9 @@ namespace Sistareo.web.Controllers
         {
             try
             {
+                if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                    return RedirectToAction("Logueo", "Home");
+
                 ProcesoViewModel VM = new ProcesoViewModel();
                 VM.RetoqueProducto = new RetoqueProductoLG().ObtenerPorIdRetoqueProducto(IdRetoqueProducto);
                 ViewBag.FechaActual = VM.RetoqueProducto.vFechaApertura;

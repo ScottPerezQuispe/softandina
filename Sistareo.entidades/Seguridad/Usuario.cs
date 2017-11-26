@@ -21,5 +21,9 @@ namespace Sistareo.entidades.Seguridad
         public string NombreRol { get; set; }
         public bool SiSuperAdmi { get; set; }
         public string ApellidoPaterno { get; set; }
+        public int IdTipoUsuario { get; set; }
+        public bool Jefatura { get; set; }
+        public bool Coordinador { get; set; }
+       
     }
 }
