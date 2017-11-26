@@ -3,6 +3,7 @@
     ViewBag.Title = "NuevoProducto";
     Layout = "~/Views/Shared/_LayoutModal.cshtml";
     int IdProducto = ViewBag.IdProducto;
+    string CodigoProducto = ViewBag.CodigoProducto;
 }
 
 <input type="button" id="btnGrabar" style="display:none;" />
@@ -21,7 +22,7 @@
                 <div class="form-group">
                     <label class="control-label col-xs-4">Codigo Producto:</label>
                     <div class="col-xs-8">
-                        <input class="form-control" id="txtCodigoProducto" name="txtCodigoProducto" />
+                        <input class="form-control" id="txtCodigoProducto" disabled  name="txtCodigoProducto" value="@CodigoProducto"/>
                     </div>
                 </div>
                 <br />

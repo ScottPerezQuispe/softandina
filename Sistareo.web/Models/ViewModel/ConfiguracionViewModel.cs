@@ -1,5 +1,6 @@
 ﻿using Sistareo.entidades;
 using Sistareo.entidades.Configuracion;
+using Sistareo.entidades.Seguridad;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,8 @@ namespace Sistareo.web.Models.ViewModel
         public Producto Producto { get; set; }
         public List<Campania> ListaCampania { get; set; }
         public Campania Campania { get; set; }
+
+        public List<Usuario> ListaJefatura{ get; set; }
+        public List<Usuario> ListaCoordinador { get; set; }
     }
 }

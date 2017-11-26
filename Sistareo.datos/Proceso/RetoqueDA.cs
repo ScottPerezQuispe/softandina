@@ -197,7 +197,7 @@ namespace Sistareo.datos.Proceso
 
         #region "Reporte"
 
-        public List<Retoque> ListarRetoqueDiseño( int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueDiseño( int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
             Retoque oRetoque;
             List<Retoque> ListaRetoque = new List<Retoque>();
@@ -215,8 +215,8 @@ namespace Sistareo.datos.Proceso
                         cmd.Parameters.AddWithValue("@IdCampania", IdCampania);
                         cmd.Parameters.AddWithValue("@Idproducto", IdProducto);
                         cmd.Parameters.AddWithValue("@IdOperario", IdOperario);
-                       
-                     
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", IdTipoUsuario);
+
                         using (SqlDataReader oReader = cmd.ExecuteReader())
                         {
                             while (oReader.Read())
@@ -249,7 +249,7 @@ namespace Sistareo.datos.Proceso
             }
         }
 
-        public List<Retoque> ListarRetoqueCampania(int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueCampania(int IdCampania, int IdOperario, int IdProducto,int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
             Retoque oRetoque;
             List<Retoque> ListaRetoque = new List<Retoque>();
@@ -267,7 +267,7 @@ namespace Sistareo.datos.Proceso
                         cmd.Parameters.AddWithValue("@IdCampania", IdCampania);
                         cmd.Parameters.AddWithValue("@Idproducto", IdProducto);
                         cmd.Parameters.AddWithValue("@IdOperario", IdOperario);
-
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", IdTipoUsuario);
 
                         using (SqlDataReader oReader = cmd.ExecuteReader())
                         {
@@ -303,7 +303,7 @@ namespace Sistareo.datos.Proceso
             }
         }
 
-        public List<Retoque> ListarRetoqueOperador(int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueOperador(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
             Retoque oRetoque;
             List<Retoque> ListaRetoque = new List<Retoque>();
@@ -321,7 +321,7 @@ namespace Sistareo.datos.Proceso
                         cmd.Parameters.AddWithValue("@IdCampania", IdCampania);
                         cmd.Parameters.AddWithValue("@Idproducto", IdProducto);
                         cmd.Parameters.AddWithValue("@IdOperario", IdOperario);
-
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", IdTipoUsuario);
 
                         using (SqlDataReader oReader = cmd.ExecuteReader())
                         {
@@ -352,7 +352,7 @@ namespace Sistareo.datos.Proceso
         }
 
 
-        public List<Retoque> ListarRetoqueProducto(int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueProducto(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
             Retoque oRetoque;
             List<Retoque> ListaRetoque = new List<Retoque>();
@@ -370,17 +370,17 @@ namespace Sistareo.datos.Proceso
                         cmd.Parameters.AddWithValue("@IdCampania", IdCampania);
                         cmd.Parameters.AddWithValue("@Idproducto", IdProducto);
                         cmd.Parameters.AddWithValue("@IdOperario", IdOperario);
-
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", IdTipoUsuario);
 
                         using (SqlDataReader oReader = cmd.ExecuteReader())
                         {
                             while (oReader.Read())
                             {
                                 oRetoque = new Retoque();
-                                oRetoque.Compania = Convert.ToString(oReader["Compania"]);
-                                oRetoque.vFechaApertura = Convert.ToString(oReader["vFechaApertura"]);
-                                oRetoque.Jefatura = Convert.ToString(oReader["Jefatura"]);
-                                oRetoque.Coordinador = Convert.ToString(oReader["Coordinador"]);
+                                //oRetoque.Compania = Convert.ToString(oReader["Compania"]);
+                                //oRetoque.vFechaApertura = Convert.ToString(oReader["vFechaApertura"]);
+                                //oRetoque.Jefatura = Convert.ToString(oReader["Jefatura"]);
+                                //oRetoque.Coordinador = Convert.ToString(oReader["Coordinador"]);
                                 oRetoque.Producto = Convert.ToString(oReader["Producto"]);
                                 //oRetoque.Descipcion = Convert.ToString(oReader["Descipcion"]);
                                 //oRetoque.Operario = Convert.ToString(oReader["Operario"]);

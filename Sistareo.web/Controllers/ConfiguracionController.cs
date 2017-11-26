@@ -181,6 +181,7 @@ namespace Sistareo.web.Controllers
             if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
                 return RedirectToAction("Logueo", "Home");
 
+          
             return View();
         }
 
@@ -213,7 +214,24 @@ namespace Sistareo.web.Controllers
 
         public ActionResult NuevoProducto(int IdProducto = 0)
         {
-           ViewData["IdProducto"] = IdProducto;
+
+            if (string.IsNullOrEmpty(Session[Constantes.csVariableSesion] as string))
+                return RedirectToAction("Logueo", "Home");
+
+            try
+            {
+                ConfiguracionViewModel vm = new ConfiguracionViewModel();
+                vm.Producto = new entidades.Producto();
+                //Listas
+                vm.Producto = new ProductoLG().GenerarCodigoProducto();
+                ViewBag.CodigoProducto = vm.Producto.CodigoProducto;
+            }
+            catch (Exception)
+            {
+                return View();
+
+            }
+            ViewData["IdProducto"] = IdProducto;
             return View();
         }
 

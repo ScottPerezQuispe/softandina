@@ -39,5 +39,10 @@ namespace Sistareo.logica.Configuracion
         {
             return new ProductoDA().ListarTodoProducto();
         }
+
+        public Producto GenerarCodigoProducto()
+        {
+            return new ProductoDA().GenerarCodigoProducto();
+        }
     }
 }

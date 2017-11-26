@@ -34,22 +34,22 @@ namespace Sistareo.logica.Proceso
 
         #region "Reporte"
 
-        public List<Retoque> ListarRetoqueDiseño(int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueDiseño(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
-            return new RetoqueDA().ListarRetoqueDiseño(IdCampania, IdOperario, IdProducto, FechaInicio, FechaFin);
+            return new RetoqueDA().ListarRetoqueDiseño(IdCampania, IdOperario, IdProducto, IdTipoUsuario, FechaInicio, FechaFin);
         }
-        public List<Retoque> ListarRetoqueCampania(int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueCampania(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
-            return new RetoqueDA().ListarRetoqueCampania(IdCampania, IdOperario, IdProducto, FechaInicio, FechaFin);
+            return new RetoqueDA().ListarRetoqueCampania(IdCampania, IdOperario, IdProducto, IdTipoUsuario, FechaInicio, FechaFin);
         }
 
-        public List<Retoque> ListarRetoqueOperador(int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueOperador(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
-            return new RetoqueDA().ListarRetoqueOperador(IdCampania, IdOperario, IdProducto, FechaInicio, FechaFin);
+            return new RetoqueDA().ListarRetoqueOperador(IdCampania, IdOperario, IdProducto, IdTipoUsuario, FechaInicio, FechaFin);
         }
-        public List<Retoque> ListarRetoqueProducto(int IdCampania, int IdOperario, int IdProducto, DateTime FechaInicio, DateTime FechaFin)
+        public List<Retoque> ListarRetoqueProducto(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
         {
-            return new RetoqueDA().ListarRetoqueProducto(IdCampania, IdOperario, IdProducto, FechaInicio, FechaFin);
+            return new RetoqueDA().ListarRetoqueProducto(IdCampania, IdOperario, IdProducto, IdTipoUsuario, FechaInicio, FechaFin);
         }
 
         #endregion

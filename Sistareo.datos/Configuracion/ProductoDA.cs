@@ -224,5 +224,36 @@ namespace Sistareo.datos.Configuracion
                 throw new ArgumentException(ex.Message, ex);
             }
         }
+
+        public Producto GenerarCodigoProducto()
+        {
+            Producto oProducto = new Producto();
+
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.conexion))
+                {
+
+                    using (SqlCommand cmd = new SqlCommand("Maestro.[Producto_GenerarCodigo]", cn))
+                    {
+                        cn.Open();
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        using (SqlDataReader oReader = cmd.ExecuteReader())
+                        {
+                            if (oReader.Read())
+                            {
+                                oProducto = new Producto();                            
+                                oProducto.CodigoProducto = Convert.ToString(oReader["CodigoProducto"]);                           
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message, ex);
+            }
+            return oProducto;
+        }
     }
 }

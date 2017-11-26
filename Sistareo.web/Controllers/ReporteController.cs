@@ -25,11 +25,12 @@ namespace Sistareo.web.Controllers
         
     
             return View();
-        } 
+        }
 
         [HttpPost]
-        public JsonResult ConsultarRetoque(int IdOpcion=0,int IdCampania=0, int IdOperario = 0, int IdProducto = 0, string FechaInicio = "", string FechaFin="")
+        public JsonResult ConsultarRetoque(int IdOpcion = 0, int IdCampania = 0, int IdOperario = 0, int IdProducto = 0,int IdTipoUsuario=0, string FechaInicio = "", string FechaFin = "")
         {
+
             var objResult = new object();
             CultureInfo culture = new CultureInfo("es-PE");
             DateTime dFechaInicio = Convert.ToDateTime(FechaInicio,culture);
@@ -41,19 +42,19 @@ namespace Sistareo.web.Controllers
                 if (IdOpcion == 0)
                 {
 
-                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueCampania(IdCampania, IdOperario, IdProducto, dFechaInicio, dFechaFin);
+                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueCampania(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
                 }
                 else if (IdOpcion == 1)
                 {
-                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueOperador(IdCampania, IdOperario, IdProducto, dFechaInicio, dFechaFin);
+                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueOperador(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
                 }
                 else if (IdOpcion == 2)
                 {
-                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueProducto(IdCampania, IdOperario, IdProducto, dFechaInicio, dFechaFin);
+                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueProducto(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
                 }
                 else
                 {
-                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueDiseño(IdCampania, IdOperario, IdProducto, dFechaInicio, dFechaFin);
+                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueDiseño(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
                 }
 
                 retoque.IdOpcion = IdOpcion;

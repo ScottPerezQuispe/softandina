@@ -107,5 +107,14 @@ namespace Sistareo.logica.Seguridad
         {
             return new UsuarioDA().ObtenerUsuario(NombreUsuario, Clave);
         }
+
+        public List<Usuario> ListarTodoJefatura()
+        {
+            return new UsuarioDA().ListarTodoJefatura();
+        }
+        public List<Usuario> ListarTodoCoordinador()
+        {
+            return new UsuarioDA().ListarTodoCoordinador();
+        }
     }
 }

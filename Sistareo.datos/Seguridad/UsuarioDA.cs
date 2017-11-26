@@ -308,5 +308,82 @@ namespace Sistareo.datos.Seguridad
 
         #endregion
 
+        #region  Jefatura
+
+        public List<Usuario> ListarTodoJefatura()
+        {
+            Usuario oUsuario;
+            List<Usuario> ListaUsuario = new List<Usuario>();
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.conexion))
+                {
+
+                    using (SqlCommand cmd = new SqlCommand("Seguridad.Jefatura_ListarTodo_SP", cn))
+                    {
+                        cn.Open();
+                        cmd.CommandType = CommandType.StoredProcedure;
+    
+                        using (SqlDataReader oReader = cmd.ExecuteReader())
+                        {
+                            while (oReader.Read())
+                            {
+                                oUsuario = new Usuario();
+                                oUsuario.IdUsuario = Convert.ToInt32(oReader["IdUsuario"]);
+                                oUsuario.NombreCompleto = Convert.ToString(oReader["NombreCompleto"]);
+                               
+                                ListaUsuario.Add(oUsuario);
+                            }
+                            oReader.Close();
+                        }
+
+                        return ListaUsuario;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new ArgumentException(ex.Message, ex);
+            }
+        }
+
+        public List<Usuario> ListarTodoCoordinador()
+        {
+            Usuario oUsuario;
+            List<Usuario> ListaUsuario = new List<Usuario>();
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.conexion))
+                {
+
+                    using (SqlCommand cmd = new SqlCommand("Seguridad.[Coordinador_ListarTodo_SP]", cn))
+                    {
+                        cn.Open();
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        using (SqlDataReader oReader = cmd.ExecuteReader())
+                        {
+                            while (oReader.Read())
+                            {
+                                oUsuario = new Usuario();
+                                oUsuario.IdUsuario = Convert.ToInt32(oReader["IdUsuario"]);
+                                oUsuario.NombreCompleto = Convert.ToString(oReader["NombreCompleto"]);
+
+                                ListaUsuario.Add(oUsuario);
+                            }
+                            oReader.Close();
+                        }
+
+                        return ListaUsuario;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new ArgumentException(ex.Message, ex);
+            }
+        }
+        #endregion
+
     }
 }

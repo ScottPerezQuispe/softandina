@@ -1,6 +1,8 @@
 ﻿using Sistareo.entidades.Proceso;
+using Sistareo.entidades.Seguridad;
 using Sistareo.logica.Configuracion;
 using Sistareo.logica.Proceso;
+using Sistareo.logica.Seguridad;
 using Sistareo.web.Helper;
 using Sistareo.web.Models.ViewModel;
 using System;
@@ -702,5 +704,56 @@ namespace Sistareo.web.Controllers
         }
 
         #endregion
+
+
+        public ActionResult ListarProcesoCombo()
+        {
+            ConfiguracionViewModel VM = new ConfiguracionViewModel();
+            var objResult = new Object();
+            int IdUsuario = Auditoria.IsAdmin();
+            VM.Operador = new entidades.Configuracion.Operador();
+            VM.ListaOperador = new List<entidades.Configuracion.Operador>();
+            VM.ListaCampania = new List<entidades.Configuracion.Campania>();
+            VM.ListaJefatura = new List<Usuario>();
+            VM.ListaCoordinador = new List<Usuario>();
+            try
+            {
+                if (IdUsuario == 0)
+                {
+
+                    VM.Operador.IdOperario = 0;
+                    VM.Operador.NombreCompleto = "Selecciona Operador";
+                    VM.ListaOperador.Add(VM.Operador);
+                }
+
+
+                var lista = new OperadorLG().ListarTodoOperador(IdUsuario).ToList();
+                VM.ListaCampania = new CampaniaLG().ListarTodoCampania().ToList();
+                VM.ListaJefatura = new UsuarioLG().ListarTodoJefatura().ToList();
+                VM.ListaCoordinador = new UsuarioLG().ListarTodoCoordinador().ToList();
+
+                foreach (var item in lista)
+                {
+                    VM.ListaOperador.Add(item);
+                }
+
+                objResult = new
+                {
+                    iTipoResultado = 1,
+                    ListaOperador = VM.ListaOperador,
+                    ListaCampania= VM.ListaCampania,
+                    ListaJefatura=VM.ListaJefatura,
+                    ListaCoordinador=VM.ListaCoordinador
+
+                };
+                return Json(objResult, JsonRequestBehavior.AllowGet);
+            }
+
+            catch (Exception ex)
+            {
+                objResult = new { iTipoResultado = 2, Mensaje = ex.Message };
+                return Json(objResult, JsonRequestBehavior.AllowGet);
+            }
+        }
     }
 }

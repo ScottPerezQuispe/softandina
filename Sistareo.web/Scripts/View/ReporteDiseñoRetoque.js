@@ -47,7 +47,7 @@ function fn_Consultar() {
     var IdProducto = $("#cboProducto").val();
     var FechaInicio = $("#txtFechaInicio").val();
     var FechaFin = $("#txtFechaFin").val();
-
+    var IdTipoUsuario = $("#cboTipoUsuario").val();
 
      //Bloquear Pantalla
     parent.fn_util_bloquearPantalla();
@@ -59,7 +59,7 @@ function fn_Consultar() {
         type: "POST",
         url: url,
         async: true,
-        data: { IdOpcion: IdOpcion, IdCampania: IdCampania, IdOperario: IdOperario, IdProducto: IdProducto, FechaInicio: FechaInicio, FechaFin: FechaFin },
+        data: { IdOpcion: IdOpcion, IdCampania: IdCampania, IdOperario: IdOperario, IdProducto: IdProducto, IdTipoUsuario: IdTipoUsuario, FechaInicio: FechaInicio, FechaFin: FechaFin },
         dataType: "JSON",
 
         success: function (Result) {
