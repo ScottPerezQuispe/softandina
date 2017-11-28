@@ -51,6 +51,10 @@ namespace Sistareo.logica.Proceso
         {
             return new RetoqueDA().ListarRetoqueProducto(IdCampania, IdOperario, IdProducto, IdTipoUsuario, FechaInicio, FechaFin);
         }
+        public List<Retoque> ListarRetoqueProductoDetallado(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
+        {
+            return new RetoqueDA().ListarRetoqueProductoDetallado(IdCampania, IdOperario, IdProducto, IdTipoUsuario, FechaInicio, FechaFin);
+        }
 
         #endregion
     }

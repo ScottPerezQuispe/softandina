@@ -70,4 +70,27 @@
     </body>
 </html>
 
+<div id="dvAlertaOK" class="css_alerta_contenedor">
+    <div class="alert alert-success alert-dismissable">
+        <button onclick="javascript: $('#dvAlertaOK').hide();" class="close" type="button">×</button>
+        <a class="alert-link" href="#"><span id="dvAlertaOK_titulo">!</span></a>
+        <span id="dvAlertaOK_msg">.</span>
+    </div>
+</div>
+<div id="dvAlertaWARN" class="css_alerta_contenedor">
+    <div class="alert alert-warning alert-dismissable">
+        <button onclick="javascript: $('#dvAlertaWARN').hide();" class="close" type="button">×</button>
+        <a class="alert-link" href="#"><span id="dvAlertaWARN_titulo">!</span></a>
+        <span id="dvAlertaWARN_msg">WARN.</span>
+    </div>
+</div>
+<div id="dvAlertaERROR" class="css_alerta_contenedor">
+    <div class="alert alert-danger alert-dismissable">
+        <button onclick="javascript: $('#dvAlertaERROR').hide();" class="close" type="button">×</button>
+        <a class="alert-link" href="#"><span id="dvAlertaERROR_titulo">!</span></a>
+        <span id="dvAlertaERROR_msg">ERROR.</span>
+    </div>
+</div>
+
+
 <script src="@Url.Content("~/Scripts/View/logueo.js")"></script>

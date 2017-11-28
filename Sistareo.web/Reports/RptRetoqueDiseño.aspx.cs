@@ -58,8 +58,11 @@ namespace Sistareo.web.Reports
                 case 2:
                     Nombre = "RptDiseñoRetoqueProducto.rdlc";
                     break;
-                default:
+                case 3:
                     Nombre = "RptDiseñoRetoque.rdlc";
+                    break;
+                default:
+                    Nombre = "RptDiseñoRetoqueProducoDetalle.rdlc";
                     break;
 
             }

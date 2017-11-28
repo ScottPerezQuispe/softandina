@@ -403,6 +403,57 @@ namespace Sistareo.datos.Proceso
             }
         }
 
+        public List<Retoque> ListarRetoqueProductoDetallado(int IdCampania, int IdOperario, int IdProducto, int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
+        {
+            Retoque oRetoque;
+            List<Retoque> ListaRetoque = new List<Retoque>();
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.conexion))
+                {
+
+                    using (SqlCommand cmd = new SqlCommand("Reportes.[Retoque_ListarProductoDetalle_SP]", cn))
+                    {
+                        cn.Open();
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@FechaInicio", FechaInicio);
+                        cmd.Parameters.AddWithValue("@FechaFin", FechaFin);
+                        cmd.Parameters.AddWithValue("@IdCampania", IdCampania);
+                        cmd.Parameters.AddWithValue("@Idproducto", IdProducto);
+                        cmd.Parameters.AddWithValue("@IdOperario", IdOperario);
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", IdTipoUsuario);
+
+                        using (SqlDataReader oReader = cmd.ExecuteReader())
+                        {
+                            while (oReader.Read())
+                            {
+                                oRetoque = new Retoque();
+                                oRetoque.Compania = Convert.ToString(oReader["Compania"]);
+                                oRetoque.vFechaApertura = Convert.ToString(oReader["vFechaApertura"]);
+                                oRetoque.Jefatura = Convert.ToString(oReader["Jefatura"]);
+                                oRetoque.Coordinador = Convert.ToString(oReader["Coordinador"]);
+                                oRetoque.Producto = Convert.ToString(oReader["Producto"]);
+                                //oRetoque.Descipcion = Convert.ToString(oReader["Descipcion"]);
+                                //oRetoque.Operario = Convert.ToString(oReader["Operario"]);
+                                //oRetoque.HoraInicio = Convert.ToString(oReader["HoraInicio"]);
+                                //oRetoque.HoraFin = Convert.ToString(oReader["HoraFin"]);
+                                oRetoque.TotalHoras = Convert.ToString(oReader["TotalHoras"]);
+                                //oRetoque.TotalHorasGeneral = Convert.ToString(oReader["TotalHorasGeneral"]);
+                                ListaRetoque.Add(oRetoque);
+                            }
+                            oReader.Close();
+                        }
+
+                        return ListaRetoque;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new ArgumentException(ex.Message, ex);
+            }
+        }
+
         #endregion
 
     }

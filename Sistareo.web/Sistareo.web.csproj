@@ -349,6 +349,7 @@
     <EmbeddedResource Include="Reports\Reporte\RptDiseñoRetoque.rdlc" />
     <EmbeddedResource Include="Reports\Reporte\RptDiseñoRetoqueCampania.rdlc" />
     <EmbeddedResource Include="Reports\Reporte\RptDiseñoRetoqueOperario.rdlc" />
+    <EmbeddedResource Include="Reports\Reporte\RptDiseñoRetoqueProducoDetalle.rdlc" />
     <EmbeddedResource Include="Reports\Reporte\RptDiseñoRetoqueProducto.rdlc" />
   </ItemGroup>
   <PropertyGroup>

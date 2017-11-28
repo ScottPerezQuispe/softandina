@@ -52,9 +52,13 @@ namespace Sistareo.web.Controllers
                 {
                     retoque.ListaRetoque = new RetoqueLG().ListarRetoqueProducto(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
                 }
-                else
+                else if (IdOpcion == 3)
                 {
                     retoque.ListaRetoque = new RetoqueLG().ListarRetoqueDiseño(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
+                }
+                else
+                {
+                    retoque.ListaRetoque = new RetoqueLG().ListarRetoqueProductoDetallado(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
                 }
 
                 retoque.IdOpcion = IdOpcion;
