@@ -454,6 +454,49 @@ namespace Sistareo.datos.Proceso
             }
         }
 
+
+        public List<Retoque> ListarRetoqueHeader(int IdTipoUsuario, DateTime FechaInicio, DateTime FechaFin)
+        {
+            Retoque oRetoque;
+            List<Retoque> ListaRetoque = new List<Retoque>();
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.conexion))
+                {
+
+                    using (SqlCommand cmd = new SqlCommand("Reportes.[Retoque_Header_SP]", cn))
+                    {
+                        cn.Open();
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@FechaInicio", FechaInicio);
+                        cmd.Parameters.AddWithValue("@FechaFin", FechaFin);                     
+                        cmd.Parameters.AddWithValue("@IdTipoUsuario", IdTipoUsuario);
+
+                        using (SqlDataReader oReader = cmd.ExecuteReader())
+                        {
+                            if (oReader.Read())
+                            {
+                                oRetoque = new Retoque();
+                           
+                                oRetoque.FechaInicio = Convert.ToString(oReader["FechaInicio"]);
+                                oRetoque.FechaFin = Convert.ToString(oReader["FechaFin"]);
+                                oRetoque.TipoUsuario = Convert.ToString(oReader["TipoUsuario"]);
+                               
+                                ListaRetoque.Add(oRetoque);
+                            }
+                            oReader.Close();
+                        }
+
+                        return ListaRetoque;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new ArgumentException(ex.Message, ex);
+            }
+        }
+
         #endregion
 
     }

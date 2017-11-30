@@ -60,6 +60,7 @@ namespace Sistareo.web.Controllers
                 {
                     retoque.ListaRetoque = new RetoqueLG().ListarRetoqueProductoDetallado(IdCampania, IdOperario, IdProducto, IdTipoUsuario, dFechaInicio, dFechaFin);
                 }
+                retoque.HeaderRetoque = new RetoqueLG().ListarRetoqueHeader(IdTipoUsuario, dFechaInicio, dFechaFin);
 
                 retoque.IdOpcion = IdOpcion;
                 Auditoria.SetRetoque(retoque);

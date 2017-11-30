@@ -30,5 +30,10 @@ namespace Sistareo.entidades.Proceso
         public string NombreCampania { get; set; }
         public string TotalHorasGeneral { get; set; }
         public string TotalDetalle { get; set; }
+
+        public List<Retoque> HeaderRetoque { get; set; }
+        public string FechaInicio { get; set; }
+        public string FechaFin { get; set; }
+        public string TipoUsuario { get; set; }
     }
 }

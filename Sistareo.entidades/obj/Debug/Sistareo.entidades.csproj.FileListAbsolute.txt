@@ -7,3 +7,4 @@ D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.entidades\bin\Debug
 D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.entidades\bin\Debug\Sistareo.entidades.pdb
 D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.entidades\obj\Debug\Sistareo.entidades.dll
 D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.entidades\obj\Debug\Sistareo.entidades.pdb
+D:\Franklin-Proyecto\Desarrollo\SISTAREO\softandina\Sistareo.entidades\obj\Debug\Sistareo.entidades.csprojResolveAssemblyReference.cache

@@ -17,6 +17,8 @@ namespace Sistareo.web.Reports
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+
             var a =Sistareo.web.Helper.Auditoria.ObtenerIdUsuario();
             List<Retoque> Listar = new List<Retoque>();
             Retoque retoque = new Retoque();
@@ -27,11 +29,14 @@ namespace Sistareo.web.Reports
                 {
                     retoque = Auditoria.ObtenerRetoque();
                     Listar = retoque.ListaRetoque;
+                    var Header = retoque.HeaderRetoque;
                     string nombre = GetNameReporte(retoque.IdOpcion);
                     ReportViewer1.LocalReport.ReportPath = Server.MapPath("~\\Reports\\Reporte\\" + nombre);
                     ReportViewer1.LocalReport.DataSources.Clear();
                     ReportDataSource rdc = new ReportDataSource("DsDiseñoRetoque", Listar);
-                    ReportViewer1.LocalReport.DataSources.Add(rdc);
+                    ReportDataSource rdca = new ReportDataSource("DsHeader", Header);
+                   ReportViewer1.LocalReport.DataSources.Add(rdc);
+                    ReportViewer1.LocalReport.DataSources.Add(rdca);
                     ReportViewer1.LocalReport.Refresh();
                 }
                 catch (Exception ex)
